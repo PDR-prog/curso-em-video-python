@@ -9,13 +9,13 @@ for c in range(1,5):
     idade = int(input('Qual a idade da {}ª pessoa? '.format(c)))
     sexo = str(input('Qual o sexo da {}ª pessoa,[M/F]? '.format(c)))
     somaidade += idade
-    if c == 1 and sexo in 'Mm':
+    if c == 1 and sexo in 'Masculinomasculino':
         maioridadehomem = idade
         nomevelho = nome
-    if sexo in 'Mm' and idade > maioridadehomem:
+    if sexo in 'Masculinomasculino' and idade > maioridadehomem:
         maioridadehomem = idade
         nomevelho = nome
-    if sexo in 'Ff' and idade < 20:
+    if sexo in 'Femininofeminino' and idade < 20:
         totmulher20 += 1
 médiaidade = somaidade / 4
 print('A média de idade do grupo é de {} anos'. format(médiaidade))
